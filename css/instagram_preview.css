@@ -1,0 +1,9 @@
+#instagram_holder{
+  border: 2px solid black;
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}

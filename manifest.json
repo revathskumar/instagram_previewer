@@ -1,0 +1,26 @@
+{
+  "name":"Instagram previewer for twitter.com",
+  "version":"0.1",
+  "description":"Helps to preview Instagram pics on twitter.com",
+  "manifest_version": 2,
+  "icons":{
+    "16":"img/instagram_preview16.png",
+    "48":"img/instagram_preview48.png",
+    "128":"img/instagram_preview128.png"
+  },
+  "homepage_url":"http://blog.revathskumar.com",
+  "content_scripts": [{
+    "matches": [
+      "https://twitter.com/*"
+    ],
+    "css": ["css/instagram_preview.css"],
+    "js": [
+      "js/jquery.min.js",
+      "instagram_preview.js"
+    ],
+    "run_at": "document_start"
+  }],
+  "permissions": [
+    "https://twitter.com/"
+  ]
+}
